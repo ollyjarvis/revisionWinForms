@@ -33,6 +33,16 @@ namespace revision
                 Directory.CreateDirectory(rootPath + "log /");
             }
 
+            if (!Directory.Exists(rootPath + "/q/"))
+            {
+                Directory.CreateDirectory(rootPath + "/q/");
+            }
+
+            if (!Directory.Exists(rootPath + "/a/"))
+            {
+                Directory.CreateDirectory(rootPath + "/a/");
+            }
+
             for (int i = 1; i < Directory.GetDirectories(rootPathBS + @"q").Length + 1; i++)
             {
                 if (!File.Exists(rootPath + "/q/" + i + "/session.txt"))
